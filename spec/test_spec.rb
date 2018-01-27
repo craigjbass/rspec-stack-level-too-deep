@@ -8,8 +8,12 @@ describe 'StackLevelTooDeep' do
               context 'rspec' do
                 context 'too' do
                   context 'much' do
-                    it 'blows up when rendering the Failure :(' do
-                      expect(1).to eq(2)
+                    context 'much' do
+                      context 'much' do
+                        it 'blows up when rendering the Failure :(' do
+                          expect(1).to eq(2)
+                        end
+                      end
                     end
                   end
                 end
